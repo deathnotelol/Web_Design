@@ -1,0 +1,119 @@
+:root {
+    --primary:#86B817;
+    --orange:orange;
+    --paracolor: #808B8D;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+::selection {
+    background: var(--primary);
+}
+::placeholder {
+    color: #ffff;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+div.packages-booking {
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)),url(../images/booking.jpg);
+    height: 600px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 10%;
+    padding: 40px;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+div.booking-content{
+    margin: 20px;
+}
+
+.booking-content h3 {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+.booking-content h1 {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+.booking-content p {
+    color: #ffff;
+    margin-bottom: 20px;
+    line-height: 2rem;  
+    text-align: justify; 
+}
+div.booking-form {
+    padding: 20px;
+}
+div.booking-form h1 {
+    color: #ffff;
+    margin: 10px;
+}
+div.nameandemail {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 6%;
+}
+div.nameandemail input {
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    background-color:rgba(0, 0, 0,0);
+    border-color: #86B817;
+    border-radius: 1rem;
+}
+div.dateanddist {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 6%;
+}
+div.date input {
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    background-color:rgba(0, 0, 0,0);
+    border-color: #86B817;
+    border-radius: 1rem;
+    color: #ffff;
+}
+div.dateanddist select {
+    margin: 10px;
+    width: 100%;
+    padding: 20px;
+    background-color:rgba(0, 0, 0,0);
+    border-color: #86B817;
+    border-radius: 1rem;
+    color: #ffff;
+}
+div.textarea textarea {
+    width: 100%;
+    height: 150px;
+    margin: 10px;
+    padding: 20px;
+    background-color:rgba(0, 0, 0,0);
+    border-color: #86B817;
+    border-radius: 1rem;
+}
+div.btn-booking {
+    width: 100%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background: #86B817;
+    color: blue;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+.btn-booking:hover{
+    background: rgba(242, 234, 7, 0.957);
+    color: var(--orange)
+}

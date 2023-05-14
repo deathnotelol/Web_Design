@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --primary:#86B817;
+    --orange:orange;
+    --paracolor: #808B8D;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+::selection {
+    background: var(--primary);
+}
+
+.heading {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+.heading span {
+    font-size: 2rem;
+    background: rgba(255, 165, 0, .2);
+    color: var(--primary);
+    border-radius: 1rem;
+    padding: .5rem .5rem;
+}
+.heading span.space {
+    background: none;
+}
+
+.btn {
+    width: 190px;
+    background: #86B817;
+    color:blue;
+    padding: .7rem 2rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+.btn:hover{
+    background: rgba(242, 234, 7, 0.957);
+    color: var(--orange)
+}
+
+.top-nav {
+    background-color: rgb(186, 202, 216);
+    /* margin: 10px 0; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem;
+    align-items: center;
+}
+.lan {
+    display: inline-block;
+}
+.agency-logo img {
+    position: absolute;
+    bottom: 78%;
+    right: 88%;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    cursor: pointer;
+
+}
+
+.lanicon img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.lanicon span {
+    font-size: 1.8rem;
+}
+
+.marquee {
+    width: 60%;
+}
+.marquee marquee {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+.user {
+    display: flex;
+}
+.user a {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+.user img {
+    margin-left: 1rem;
+    width: 30px;
+    height: 30px;
+}
+.search {
+    margin-right: 10px;
+}
+
+
+.container {
+
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    margin-top: 0;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: rgb(5, 165, 245);
+    font-weight: bold;
+    padding-left: 15px;
+    font-style: italic;
+}
+.logo span {
+    color: var(--primary);
+}
+.menuItem ul li {
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
+
+.menuItem ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.drdw {
+    display: block;
+}
+
+.menuItem ul li a:hover {
+    text-decoration: underline;
+    background: rgba(255, 165, 0, .2);
+    color: var(--orange)
+}
+
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow:5px 5px 5px gray;
+}
+.content {
+    padding: 2rem 9%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+.content h3 {
+    font-size: 3rem ;
+    color: var(--primary);
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+
+.content p {
+    font-size: 2rem;
+    color: var(--primary);
+    padding: .5rem 0;
+}
+.content a {
+    /* display: inline-block; */
+    margin-top: 1rem;
+    background:var(--primary);
+    color:blue;
+    padding: .8rem 2rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: 1rem;
+}
+.content a:hover {
+    background: rgba(242, 234, 7, 0.957);
+    color: var(--orange)
+}
+
+.footer {
+    background: #333;
+}
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+    margin-left: 4rem;
+}
+
+.footer .box-container .box {
+    padding: 3rem;
+    flex: 18rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 1.5rem ;
+    padding: .7rem 0;
+    color: #fff;
+}
+
+.footer .box-container .box p {
+    font-size: 1rem ;
+    padding: .7rem 0;
+    color: #eee;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1rem ;
+    padding: .7rem 0;
+    color: #eee;
+}
+.footer .box-container .box a:hover {
+    color: var(--orange); 
+    text-decoration: underline;  
+}
+.footer .credit {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #fff;
+    border-top: .1rem solid rgba(255, 255, 255, .2);
+}
+.footer .credit span {
+    color:var(--primary);
+}
